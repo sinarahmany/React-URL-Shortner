@@ -38,7 +38,7 @@ const LinkResult = ({ inputValue }) => {
     return <p className="noData">Loading...</p>
   }
   if(error) {
-    return <p className="noData">Something wne t wrong :(</p>
+    return <p className="noData">Something went wrong :(</p>
   }
 
 
@@ -46,7 +46,7 @@ const LinkResult = ({ inputValue }) => {
     <>
       {shortenLink && (
         <div className="result">
-          <p>{shortenLink}</p>
+          <p className="bg-white/5">{shortenLink}</p>
           <CopyToClipboard
             text={shortenLink}
             onCopy={() => setCopied(true)}
